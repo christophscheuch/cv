@@ -1,0 +1,167 @@
+---
+title: "Christoph Scheuch's CV"
+author: Christoph Scheuch
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results = 'asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+# Load csv with position info
+position_data <- read_csv2('positions.csv')
+```
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+Aside
+================================================================================
+
+![logo](portrait.jpg){width=100%}
+
+<!-- 
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("View this CV online with links at _christophscheuch.me/cv_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/scheuch_cv.pdf)")
+}
+```
+-->
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> cscheuch@wu.ac.at
+- <i class="fa fa-twitter"></i> [KriseScheuch](https://twitter.com/KriseScheuch)
+- <i class="fa fa-github"></i> [christophscheuch](https://github.com/christophscheuch)
+- <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
+- <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
+- <i class="fa fa-phone"></i> +43-1-313 36 - 6321 
+
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+skills <- tribble(
+  ~skill,               ~level,
+  "LaTeX",              5,
+  "R",                  5,
+  "Stata",              5,
+  "Matlab",             3,
+  "Python",             2,
+  "SQL",                1,
+  "Julia",              1
+)
+
+build_skill_bars(skills)
+```
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Last updated on `r Sys.Date()`.
+
+Main
+================================================================================
+
+Christoph Scheuch {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions."
+
+cat(sanitize_links(intro_text))
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+Research Projects {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_projects')
+```
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'work_experience')
+```
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'teaching_experience')
+```
+
+Awards {data-icon=trophy}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'awards')
+```
+
+Further Activities {data-icon=plus-square}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'miscallaneous')
+```
+
+<!-- 
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+--> 
