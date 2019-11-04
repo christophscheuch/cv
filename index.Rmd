@@ -99,7 +99,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions."
+intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions with a recent focus on FinTech and Blockchain."
 
 cat(sanitize_links(intro_text))
 ```
