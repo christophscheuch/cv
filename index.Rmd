@@ -75,9 +75,10 @@ Language Skills {#skills}
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "LaTeX",              5,
   "R",                  5,
   "Stata",              5,
+  "LaTeX",              5,
+  "Markdown",           3,
   "Matlab",             3,
   "Python",             2,
   "SQL",                1,
@@ -99,7 +100,9 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions with a recent focus on FinTech and Blockchain."
+intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions. 
+
+For instance, I compiled a large database of Bitcoin orderbook and network data to evaluate arbitrage opportunities in blockchain-based markets. I also analyzed transaction-level data from a FinTech banking app provider to study the consumption response to the introduction of an overdraft facility. Recently, I delved into mechanism design theory to assess the potential of crowdfunding in eliciting demand information."
 
 cat(sanitize_links(intro_text))
 ```
