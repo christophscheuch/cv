@@ -110,9 +110,30 @@ cat(sanitize_links(intro_text))
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-```{r}
-print_section(position_data, 'education')
-```
+### PhD Candidate, Finance
+
+Vienna Graduate School of Finance
+
+Vienna, AT
+
+2020 - 2015
+
+### Mag. rer. soc. oec., Economics
+
+University of Vienna
+
+Vienna, AT
+
+2015 - 2012
+
+
+### Bakk. rer. soc. oec., Economics
+
+University of Vienna
+
+Vienna, AT
+
+2012 - 2009
 
 Research Projects {data-icon=laptop}
 --------------------------------------------------------------------------------
