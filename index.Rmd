@@ -62,7 +62,6 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> cscheuch@wu.ac.at
-- <i class="fa fa-twitter"></i> [KriseScheuch](https://twitter.com/KriseScheuch)
 - <i class="fa fa-github"></i> [christophscheuch](https://github.com/christophscheuch)
 - <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
 - <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
@@ -78,10 +77,10 @@ skills <- tribble(
   "R",                  5,
   "Stata",              5,
   "LaTeX",              5,
+  "SQL",                3,
   "Markdown",           3,
   "Matlab",             3,
   "Python",             2,
-  "SQL",                1,
   "Julia",              1
 )
 
@@ -100,9 +99,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am a PhD student at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies. Throughout my academic career, I have applied a wide range of theoretical and empirical approaches to tackle a diverse set of economic questions. 
-
-For instance, I compiled a large database of Bitcoin orderbook and network data to evaluate arbitrage opportunities in blockchain-based markets. I also analyzed transaction-level data from a FinTech banking app provider to study the consumption response to the introduction of an overdraft facility. Recently, I delved into mechanism design theory to assess the potential of crowdfunding in eliciting demand information."
+intro_text <- "I am Head of Business Intelligence and Data Science at wikifolio and a PhD candidate at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
 cat(sanitize_links(intro_text))
 ```
@@ -135,7 +132,7 @@ Vienna, AT
 
 2012 - 2009
 
-Research Projects {data-icon=laptop}
+Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -169,23 +166,3 @@ Further Activities {data-icon=plus-square}
 ```{r}
 print_section(position_data, 'miscallaneous')
 ```
-
-<!-- 
-```{r}
-if(PDF_EXPORT){
-  cat("
-  
-Links {data-icon=link}
---------------------------------------------------------------------------------
-
-<br>
-
-
-")
-  
-  walk2(links, 1:length(links), function(link, index){
-    print(glue('{index}. {link}'))
-  })
-}
-```
---> 
