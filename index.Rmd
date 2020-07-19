@@ -61,11 +61,9 @@ if(PDF_EXPORT){
 Contact {#contact}
 --------------------------------------------------------------------------------
 
-- <i class="fa fa-envelope"></i> cscheuch@wu.ac.at
 - <i class="fa fa-github"></i> [christophscheuch](https://github.com/christophscheuch)
 - <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
 - <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
-- <i class="fa fa-phone"></i> +43-1-313 36 - 6321 
 
 
 Language Skills {#skills}
@@ -99,7 +97,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am Head of Business Intelligence and Data Science at wikifolio and a PhD candidate at the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
+intro_text <- "I am Head of Business Intelligence and Data Science at wikifolio and I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
 cat(sanitize_links(intro_text))
 ```
@@ -107,7 +105,7 @@ cat(sanitize_links(intro_text))
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-### PhD Candidate, Finance
+### PhD, Finance
 
 Vienna Graduate School of Finance
 
@@ -132,18 +130,19 @@ Vienna, AT
 
 2012 - 2009
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'research_projects')
-```
 
 Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'work_experience')
+```
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_projects')
 ```
 
 Teaching Experience {data-icon=chalkboard-teacher}
