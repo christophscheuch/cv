@@ -27,7 +27,7 @@ links <- c()
 source('parsing_functions.R')
 
 # Load csv with position info
-position_data <- read_csv2('positions.csv')
+position_data <- readxl::read_xlsx('positions.xlsx')
 ```
 
 ```{r}
@@ -65,7 +65,6 @@ Contact {#contact}
 - <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
 - <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
 
-
 Language Skills {#skills}
 --------------------------------------------------------------------------------
 
@@ -75,9 +74,9 @@ skills <- tribble(
   "R",                  5,
   "Stata",              5,
   "LaTeX",              5,
-  "SQL",                3,
-  "Markdown",           3,
-  "Matlab",             3,
+  "SQL",                4,
+  "Markdown",           4,
+  "Matlab",             2,
   "Python",             2,
   "Julia",              1
 )
@@ -97,9 +96,17 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am Head of Business Intelligence and Data Science at wikifolio and I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
+intro_text <- "I am currently Director of Product at wikifolio where I am responsible for product planning and execution. Before that, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
 cat(sanitize_links(intro_text))
+```
+
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'work_experience')
 ```
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -129,14 +136,6 @@ University of Vienna
 Vienna, AT
 
 2012 - 2009
-
-
-Work Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'work_experience')
-```
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
