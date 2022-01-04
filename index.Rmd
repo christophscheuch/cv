@@ -96,7 +96,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am currently Director of Product at wikifolio where I am responsible for product planning and execution. Before that, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
+intro_text <- "I am currently the Director of Product at wikifolio where I am responsible for product planning, execution and monitoring. Before I joined wikifolio, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
 cat(sanitize_links(intro_text))
 ```
