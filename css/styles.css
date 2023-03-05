@@ -67,7 +67,7 @@ sup {
 
 /* Move closer to start and up towards header */
 .aside ul {
-  padding-left: 1rem;
+  padding-left: 0rem;
 }
 
 .aside li::before {

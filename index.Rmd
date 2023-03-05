@@ -61,23 +61,24 @@ if(PDF_EXPORT){
 Contact {#contact}
 --------------------------------------------------------------------------------
 
+-  [christoph.scheuch@gmail.com](christoph.scheuch@gmail.com)
 - <i class="fa fa-github"></i> [christophscheuch](https://github.com/christophscheuch)
 - <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
 - <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
 
-Language Skills {#skills}
+Skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Stata",              5,
-  "LaTeX",              5,
   "SQL",                4,
   "Markdown",           4,
+  "Figma",              3,
   "Matlab",             2,
   "Python",             2,
+  "HTML",               1,
   "Julia",              1
 )
 
@@ -96,7 +97,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am currently the Director of Product at wikifolio where I am responsible for product planning, execution and monitoring. Before I joined wikifolio, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
+intro_text <- "I am the Director of Product at the social trading platform wikifolio, where I am responsible for product planning, execution and monitoring. Before I joined wikifolio, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
 cat(sanitize_links(intro_text))
 ```
