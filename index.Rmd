@@ -73,9 +73,9 @@ Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
+  "Python",             5,
   "SQL",                4,
   "Markdown",           4,
-  "Python",             3,
   "Figma",              3,
   "Matlab",             2,
   "HTML",               1,
@@ -130,7 +130,6 @@ University of Vienna
 Vienna, AT
 
 2015 - 2012
-
 
 ### Bakk. rer. soc. oec., Economics
 
