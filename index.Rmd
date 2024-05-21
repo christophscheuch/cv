@@ -97,7 +97,7 @@ Christoph Scheuch {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I am an independent data science and business intelligence expert with passion for all topics surrounding finance and data.
+intro_text <- "I am an independent data science and business intelligence expert with a passion for all topics surrounding finance and data.
 
 I previously served as the Head of Artificial Intelligence, Director of Product, and the Head of Business Intelligence & Data Science at wikifolio. Before I joined wikifolio, I received my PhD from the Vienna Graduate School of Finance with a research focus on the economics of new financial technologies and big data analysis."
 
