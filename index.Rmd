@@ -61,7 +61,7 @@ if(PDF_EXPORT){
 Contact {#contact}
 --------------------------------------------------------------------------------
 
--  [christoph.scheuch@gmail.com](christoph.scheuch@gmail.com)
+-  [christoph@tidy-intelligence.com](christoph@tidy-intelligence.com)
 - <i class="fa fa-github"></i> [christophscheuch](https://github.com/christophscheuch)
 - <i class="fa fa-linkedin"></i> [christophscheuch](https://www.linkedin.com/in/christophscheuch/)
 - <i class="fa fa-link"></i> [christophscheuch.github.io](https://christophscheuch.github.io/)
